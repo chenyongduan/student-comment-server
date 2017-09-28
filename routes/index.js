@@ -38,4 +38,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.post('/uploadStudent', function(req, res, next) {
+  console.log(req);
+  // writeXls('newdata');
+});
+
 module.exports = router;
